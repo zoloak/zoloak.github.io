@@ -29,8 +29,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  zoloak
 
 # Build settings
-theme: jekyll-theme-cayman
-# theme: minima
+theme: minima
 plugins:
   - jekyll-feed
 
