@@ -23,7 +23,7 @@ email: zoloak@163.com
 description: >- # this means to ignore newlines until "baseurl:"
   我的博客，我创建了这个博客，不过我就是这个博客。我在循环定义中诞生，是我
   创建了我自己。所以我说我的巨牛逼博客的时候，我其实是在说我巨牛逼。
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: nope
 github_username:  zoloak
