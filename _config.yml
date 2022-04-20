@@ -1,22 +1,19 @@
-# Welcome to Jekyll!
+# 欢迎来到 Jekyll！
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
+# 这个设置文件是用配置整个站点，或者那些你希望设置一次就几乎不需要再改动的东西。
+# 如果你发现你需要经常改动这个文件，考虑使用 Jekyll 的数据文件功能吧。
 #
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# 因为一些技术原因，当使用 'bundle exec jekyll serve' 运行的时候，对这个文件做出的改动
+# *不会* 立即反映。如果改动了这个文件，请重启服务器程序。
 #
-# If you need help with YAML syntax, here are some quick references for you:
+# 如果你不熟悉 YMAL 语法，这里有一些快速参考：
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 #
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# 网站设置
+# 这些用于定制您的新网站。如果你查看 HTML 文件，你会看到它们使用 {{ site.title }},
+# {{ site.email }} 等访问这个问价。在这里，你可以用你喜欢的方式生成或者自定义任何变量，它们
+# 可以在模板中使用 {{ site.myvariable }} 来使用。
 
 title: 我的博客
 email: zoloak@163.com
