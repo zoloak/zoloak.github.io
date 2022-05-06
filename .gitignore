@@ -4,3 +4,6 @@ _drafts
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# VScode workspace
+zoloak.github.io.code-workspace

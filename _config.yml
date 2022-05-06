@@ -30,22 +30,45 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
+defaults:
+  - scope:
+      path: ""
+      type: reviews
+    values:
+      layout: review
+
+# 集合
+collections:
+  reviews:
+    output: false
+    permalink: /:collection/:path/
+
+# 永久连结
+permalink: /:categories/:year-:month-:day-:title:output_ext
+
+# 在生成的时候排除的文件
+exclude:
+  - zoloak.github.io.code-workspace
+
+# markdown render engine.
+markdown:         kramdown
+kramdown:
+  auto_ids:               true
+  input:                  GFM # GitHub Flavored Markdown Spec
+  math_engine:            mathjax
+  smart_quotes:           lsquo,rsquo,ldquo,rdquo
+  toc_levels:             1..6
+  syntax_highlighter:     rouge
+  syntax_highlighter_opts:
+    guess_lang:           true
+
+# how to use
+# - in laypots:
+# <link rel="stylesheet" href="{{site.baseurl}}/gitbook/rouge/{{ site.syntax_highlighter_style }}.css">
 #
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# used rouge to highlight
+# use `rougify help style` to find a theme
+# use `rougify style gruvbox > .\assets\css\rouge\gruvbox.css` to genrate a theme
+syntax_highlighter_style: gruvbox
+
+markdown_ext:     markdown,mkdown,mkdn,mkd,md

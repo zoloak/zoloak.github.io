@@ -1,0 +1,43 @@
+/* genrated code format: 
+ * - block:
+ *     div.highlighter-rouge.language-<languaue,eg.plaintext|java|html|...>
+ *       div.highlight
+ *         pre.highlight
+ *           code
+ * - inline:
+ *     code.highlighter-rouge.language-<languaue,eg.plaintext|java|html|...>
+ */
+
+/* code font */
+.highlight code, code.language-plaintext {
+    font-family: Consolas, monospace;
+}
+
+/* inline code */
+/* basicly github */
+code.language-plaintext {
+    padding: .2em .4em;
+    margin: 0;
+    font-size: 85%;
+    border-radius: 6px;
+    background-color: #eef0f2;
+}
+
+/* only plaintext uses light format */
+/* to overwrite user defined css */
+.language-plaintext .highlight {
+    background-color: #eef0f2;
+}
+.language-plaintext > .highlight > .highlight {
+    color: black;
+    font-size: 85%;
+    /* overflow: auto; */
+    padding: 16px;
+}
+
+/* to overwrite minima */
+pre, code {
+    white-space: break-spaces;
+    border: unset;
+    background-color: unset;
+}
